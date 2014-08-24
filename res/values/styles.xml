@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupMenuCompatStyle" parent="android:Widget" />
+
+    <style name="PopupMenuCompatStyle.DropDownListView" />
+
+    <style name="PopupMenuCompatStyle.DropDownListView.Dark">
+        <item name="android:divider">@drawable/list_divider_holo_dark</item>
+    </style>
+
+    <style name="PopupMenuCompatStyle.DropDownListView.Light">
+        <item name="android:divider">@drawable/list_divider_holo_light</item>
+    </style>
+
+    <style name="PopupMenuCompatStyle.ListPopupWindow">
+        <!--<item name="android:dropDownVerticalOffset">0dip</item>-->
+        <!--<item name="android:dropDownHorizontalOffset">0dip</item>-->
+        <!--<item name="android:dropDownWidth">wrap_content</item>-->
+    </style>
+
+    <style name="PopupMenuCompatStyle.ListPopupWindow.Dark">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_holo_dark</item>
+    </style>
+
+    <style name="PopupMenuCompatStyle.ListPopupWindow.Light">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_holo_light</item>
+    </style>
+
+</resources>
