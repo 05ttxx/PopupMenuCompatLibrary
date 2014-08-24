@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/src/debug/assets" />
+    </dataSet>
+
+</merger>

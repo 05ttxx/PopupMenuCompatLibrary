@@ -1,15 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.2'
+    }
+}
+
 apply plugin: 'android-library'
 
 dependencies {
 }
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "18.1.0"
+    compileSdkVersion 17
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 18
+        minSdkVersion 11
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
     }
 
     sourceSets {
@@ -21,6 +32,4 @@ android {
     }
 
 }
-
-apply from: '../maven_push.gradle'
 
