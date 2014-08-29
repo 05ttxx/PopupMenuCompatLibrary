@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 23">
+
+    <issue
+        id="GradleDeprecated"
+        severity="Warning"
+        message="&apos;android-library&apos; is deprecated; use &apos;com.android.library&apos; instead"
+        category="Correctness"
+        priority="6"
+        summary="Looks for deprecated Gradle constructs"
+        explanation="This detector looks for deprecated Gradle constructs which currently work but will likely stop working in a future update."
+        errorLine1="apply plugin: &apos;android-library&apos;"
+        errorLine2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/build.gradle"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Checks that the manifest specifies a targetSdkVersion that is recent"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="    &lt;uses-sdk"
+        errorLine2="    ^">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Checks that the manifest specifies a targetSdkVersion that is recent"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 17"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/build.gradle"
+            line="21"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This versionCode value (1) is not used; it is always overridden by the value specified in the Gradle build script (1)"
+        category="Correctness"
+        priority="4"
+        summary="Looks for values specified in the manifest file which are overridden by values in Gradle"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="          android:versionCode=&quot;1&quot;"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"
+            line="4"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This versionName value (1.0) is not used; it is always overridden by the value specified in the Gradle build script (1.0)"
+        category="Correctness"
+        priority="4"
+        summary="Looks for values specified in the manifest file which are overridden by values in Gradle"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="          android:versionName=&quot;1.0&quot;>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This minSdkVersion value (11) is not used; it is always overridden by the value specified in the Gradle build script (11)"
+        category="Correctness"
+        priority="4"
+        summary="Looks for values specified in the manifest file which are overridden by values in Gradle"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:minSdkVersion=&quot;11&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        severity="Warning"
+        message="This targetSdkVersion value (17) is not used; it is always overridden by the value specified in the Gradle build script (17)"
+        category="Correctness"
+        priority="4"
+        summary="Looks for values specified in the manifest file which are overridden by values in Gradle"
+        explanation="The value of (for example) `minSdkVersion` is only used if it is not specified in the `build.gradle` build scripts. When specified in the Gradle build scripts, the manifest value is ignored and can be misleading, so should be removed to avoid ambiguity."
+        errorLine1="        android:targetSdkVersion=&quot;17&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="Should explicitly set android:allowBackup to true or false (it&apos;s true by default, and that can have some security implications for the application&apos;s data)"
+        category="Security"
+        priority="3"
+        summary="Ensure that allowBackup is explicitly set in the application&apos;s manifest"
+        explanation="The allowBackup attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup
+
+By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.
+
+This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.
+
+Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.
+
+To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`"
+        url="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        urls="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        quickfix="adt">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/AndroidManifest.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.drawable.menu_panel_holo_dark appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable/menu_panel_holo_dark.xml"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.drawable.menu_panel_holo_light appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable/menu_panel_holo_light.xml"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The list_divider_holo_dark.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Finds icons that have identical bitmaps across various configuration parameters"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable-mdpi/list_divider_holo_dark.9.png"/>
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable-hdpi/list_divider_holo_dark.9.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        severity="Warning"
+        message="The list_divider_holo_light.9.png icon has identical contents in the following configuration folders: drawable-hdpi, drawable-mdpi"
+        category="Usability:Icons"
+        priority="5"
+        summary="Finds icons that have identical bitmaps across various configuration parameters"
+        explanation="If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable-mdpi/list_divider_holo_light.9.png"/>
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/drawable-hdpi/list_divider_holo_light.9.png"/>
+    </issue>
+
+    <issue
+        id="ViewConstructor"
+        severity="Warning"
+        message="Custom view DropDownListView is missing constructor used by tools: (Context) or (Context,AttributeSet) or (Context,AttributeSet,int)"
+        category="Usability"
+        priority="3"
+        summary="Checks that custom views define the expected constructors"
+        explanation="Some layout tools (such as the Android layout editor for Studio &amp; Eclipse) needs to find a constructor with one of the following signatures:
+* `View(Context context)`
+* `View(Context context, AttributeSet attrs)`
+* `View(Context context, AttributeSet attrs, int defStyle)`
+
+If your custom view needs to perform initialization which does not apply when used in a layout editor, you can surround the given code with a check to see if `View#isInEditMode()` is false, since that method will return `false` at runtime but true within a user interface editor."
+        errorLine1="    private static class DropDownListView extends ListView {"
+        errorLine2="                         ~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/src/main/java/com/mcxiaoke/popupmenu/ListPopupWindowCompat.java"
+            line="1175"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="com/mcxiaoke/popupmenu/ListPopupWindowCompat$PopupTouchInterceptor#onTouch should call View#performClick when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Checks that custom views handle accessibility on click events"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="        public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                       ~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/src/main/java/com/mcxiaoke/popupmenu/ListPopupWindowCompat.java"
+            line="1448"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="com/mcxiaoke/popupmenu/PopupMenuCompat#onTouch should call View#performClick when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Checks that custom views handle accessibility on click events"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="    public boolean onTouch(final View v, final MotionEvent event) {"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/src/main/java/com/mcxiaoke/popupmenu/PopupMenuCompat.java"
+            line="123"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="[Accessibility] Missing contentDescription attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Ensures that image widgets provide a contentDescription"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.
+
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
+
+Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/Users/longjianlin/Documents/leap-android-work/leap-app-platform/deps/PopupMenuCompatLibrary/res/layout/list_item_popup_menu.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+</issues>
